@@ -3,13 +3,521 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JenštejnFest 26</title>
+  <title>JenštejnFest 26 – 20. června 2026 · Obecní louka pod hradem Jenštejn</title>
+  <meta name="description" content="9. ročník festivalu pod hradem Jenštejn. Headliner Highland, dále Tichá Dohoda, AC/DC Tribute a Mutanti hledaj východisko. Sobota 20. června 2026.">
+  <meta property="og:title" content="JenštejnFest 26 · Highland + Tichá Dohoda + AC/DC Tribute + Mutanti">
+  <meta property="og:description" content="Sobota 20. června 2026 · Obecní louka pod hradem Jenštejn">
+  <meta property="og:url" content="https://jenstejnfest.cz">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>JenštejnFest 26</h1>
-    <p>připravujeme</p>
-  </main>
+
+<!-- ─────── NAV ─────── -->
+<nav class="site-nav" aria-label="Hlavní navigace">
+  <a class="site-nav__brand" href="#top">
+    <img class="site-nav__logo" src="assets/jenstejn-znak.png" alt="Znak obce Jenštejn">
+    <span class="site-nav__brand-text">
+      JENŠTEJN
+      <span class="site-nav__brand-sub">FEST · 20·06·26</span>
+    </span>
+  </a>
+
+  <div class="site-nav__links">
+    <a href="#top">HOME</a>
+    <a href="#lineup">LINEUP</a>
+    <a href="#info">INFO</a>
+    <a href="#foto">FOTO</a>
+    <a class="site-nav__cta" href="https://goout.net/cs/jenstejnfest-2026/szjflby/" target="_blank" rel="noopener">VSTUPENKY →</a>
+  </div>
+
+  <div class="site-nav__mobile-actions">
+    <a class="site-nav__cta" href="https://goout.net/cs/jenstejnfest-2026/szjflby/" target="_blank" rel="noopener">VSTUPENKY</a>
+    <button class="site-nav__hamburger" type="button" data-hamburger aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu panel (hidden by default, shown when .is-menu-open on .site-nav) -->
+  <div class="site-nav__menu" id="mobile-menu" data-mobile-menu>
+    <a href="#top">HOME</a>
+    <a href="#lineup">LINEUP</a>
+    <a href="#program">PROGRAM</a>
+    <a href="#info">INFO</a>
+    <a href="#foto">FOTO</a>
+  </div>
+</nav>
+
+<!-- ─────── HERO – LINEUP POSTER ─────── -->
+<section class="hero" id="top">
+  <div class="hero__sidebar" aria-hidden="true">
+    <div class="hero__sidebar-text">JENŠTEJN FEST · IX. ROČNÍK</div>
+  </div>
+
+  <div class="hero__date">
+    <span class="hero__date-day">SOBOTA</span>
+    <span class="hero__date-num">20·06·26</span>
+    <span class="hero__date-place">OBECNÍ LOUKA</span>
+  </div>
+
+  <div class="hero__lineup">
+    <span class="hero__band hero__band--highland">HIGHLAND</span>
+    <span class="hero__band hero__band--ticha">TICHÁ <span class="dot">·</span> DOHODA</span>
+    <span class="hero__band hero__band--acdc">AC/DC <span class="dot">·</span> TRIBUTE</span>
+    <span class="hero__band hero__band--mutanti">
+      <span class="hero__band--mutanti-desktop">MUTANTI <span class="dot">·</span> HLEDAJ <span class="dot">·</span> VÝCHODISKO</span>
+      <span class="hero__band--mutanti-mobile">MUTANTI HLEDAJ<br>VÝCHODISKO</span>
+    </span>
+  </div>
+
+  <div class="hero__strip">
+    <div>
+      <div class="hero__strip-kicker">BRÁNY OD 15:15</div>
+      <div class="hero__strip-price">VSTUPNÉ 190 / 250 KČ</div>
+    </div>
+    <a class="hero__strip-cta" href="https://goout.net/cs/jenstejnfest-2026/szjflby/" target="_blank" rel="noopener">KOUPIT →</a>
+  </div>
+</section>
+
+<!-- ─────── MASTHEAD ─────── -->
+<section class="masthead">
+  <div class="masthead__inner">
+    <div class="masthead__left">
+      <span class="masthead__number">IX.</span>
+      <span class="masthead__text">ROČNÍK<span class="masthead__sep"> · OD ROKU 2017</span></span>
+    </div>
+    <div class="masthead__right">
+      <span class="masthead__right-desktop">DO FESTIVALU ZBÝVÁ</span>
+      <span class="masthead__right-mobile">OD ROKU 2017</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────── COUNTDOWN ─────── -->
+<section class="countdown" data-countdown="2026-06-20T15:15:00+02:00">
+  <div class="countdown__inner">
+    <div class="countdown__kicker">DO ZAHÁJENÍ ZBÝVÁ</div>
+    <div class="countdown__cells">
+      <div class="countdown__cell countdown__cell--accent">
+        <span class="countdown__num" data-countdown-cell="days">00</span>
+        <span class="countdown__label">DNÍ</span>
+      </div>
+      <span class="countdown__colon" aria-hidden="true">:</span>
+      <div class="countdown__cell">
+        <span class="countdown__num" data-countdown-cell="hours">00</span>
+        <span class="countdown__label">HODIN</span>
+      </div>
+      <span class="countdown__colon" aria-hidden="true">:</span>
+      <div class="countdown__cell">
+        <span class="countdown__num" data-countdown-cell="mins">00</span>
+        <span class="countdown__label">MINUT</span>
+      </div>
+      <span class="countdown__colon" aria-hidden="true">:</span>
+      <div class="countdown__cell">
+        <span class="countdown__num" data-countdown-cell="secs">00</span>
+        <span class="countdown__label">VTEŘIN</span>
+      </div>
+    </div>
+    <p class="countdown__text">
+      Brány obecní louky se otevřou v sobotu <b>20. června 2026</b> v 15:15. Předprodej běží přes GoOut, místní mají vstup zdarma.
+    </p>
+  </div>
+</section>
+
+<!-- ─────── LINEUP – 4 band cards ─────── -->
+<section class="lineup" id="lineup">
+  <div class="lineup__inner">
+    <div class="lineup__header">
+      <div class="lineup__heading">
+        <span class="lineup__kicker">01 · KAPELY</span>
+        <h2 class="lineup__title">
+          <span class="lineup__dash">–</span>
+          <span class="lineup__title-desktop">KAPELY</span>
+          <span class="lineup__title-mobile">LINEUP</span>
+        </h2>
+      </div>
+      <div class="lineup__counter" aria-hidden="true">01<br>–<br>04</div>
+    </div>
+
+    <div class="lineup__grid">
+
+      <!-- Highland – HEADLINER, has photo -->
+      <a class="band-card band-card--headliner" href="https://www.kapelahighland.cz" target="_blank" rel="noopener">
+        <div class="band-card__media band-card__media--photo" style="background-image: url('assets/highland-photo.png'); background-position: center 28%;"></div>
+        <div class="band-card__gradient"></div>
+        <div class="band-card__top">
+          <span class="band-card__badge">HEADLINER</span>
+          <span class="band-card__time">19:30</span>
+        </div>
+        <div class="band-card__bottom">
+          <h3 class="band-card__name">HIGHLAND</h3>
+          <p class="band-card__meta">19:30–20:45 · 75 min</p>
+          <span class="band-card__link">kapelahighland.cz <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- Tichá Dohoda – photo -->
+      <a class="band-card" href="https://tichadohoda.cz" target="_blank" rel="noopener">
+        <div class="band-card__media band-card__media--photo" style="background-image: url('assets/ticha-photo.webp');"></div>
+        <div class="band-card__gradient"></div>
+        <div class="band-card__top">
+          <span></span>
+          <span class="band-card__time">17:30</span>
+        </div>
+        <div class="band-card__bottom">
+          <h3 class="band-card__name">TICHÁ DOHODA</h3>
+          <p class="band-card__meta">17:30–18:30 · 60 min</p>
+          <span class="band-card__link">tichadohoda.cz <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- AC/DC Tribute – photo -->
+      <a class="band-card" href="https://acdctribute.cz" target="_blank" rel="noopener">
+        <div class="band-card__media band-card__media--photo" style="background-image: url('assets/acdc-photo.webp');"></div>
+        <div class="band-card__gradient"></div>
+        <div class="band-card__top">
+          <span></span>
+          <span class="band-card__time">21:45</span>
+        </div>
+        <div class="band-card__bottom">
+          <h3 class="band-card__name">AC/DC TRIBUTE PARDUBICE</h3>
+          <p class="band-card__meta">21:45–23:15 · 90 min</p>
+          <span class="band-card__link">acdctribute.cz <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- Mutanti hledaj východisko – photo -->
+      <a class="band-card" href="https://mutanti.cz" target="_blank" rel="noopener">
+        <div class="band-card__media band-card__media--photo" style="background-image: url('assets/mutanti-photo.webp');"></div>
+        <div class="band-card__gradient"></div>
+        <div class="band-card__top">
+          <span></span>
+          <span class="band-card__time">15:45</span>
+        </div>
+        <div class="band-card__bottom">
+          <h3 class="band-card__name">MUTANTI HLEDAJ VÝCHODISKO</h3>
+          <p class="band-card__meta">15:45–16:45 · 60 min</p>
+          <span class="band-card__link">mutanti.cz <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────── PROGRAM – editorial timeline ─────── -->
+<section class="program" id="program">
+  <div class="program__inner">
+    <div class="program__header">
+      <div class="program__heading">
+        <span class="program__kicker">02 · PROGRAM</span>
+        <h2 class="program__title">PROGRAM</h2>
+      </div>
+      <div class="program__date" aria-hidden="true">SOBOTA<br>20·06·2026</div>
+    </div>
+
+    <ol class="program__list">
+      <li class="program-row">
+        <div class="program-row__time"><span class="program-row__time-start">15:15</span></div>
+        <div class="program-row__body">
+          <h3 class="program-row__name">OTEVŘENÍ BRAN</h3>
+          <p class="program-row__meta">Vstup, kontrola lístků, bar otevírá.</p>
+        </div>
+      </li>
+
+      <li class="program-row">
+        <div class="program-row__time">
+          <span class="program-row__time-start">15:45</span><span class="program-row__time-end">–16:45</span>
+        </div>
+        <div class="program-row__body">
+          <h3 class="program-row__name">MUTANTI HLEDAJ VÝCHODISKO</h3>
+          <p class="program-row__meta">60 min</p>
+        </div>
+      </li>
+
+      <li class="program-row">
+        <div class="program-row__time">
+          <span class="program-row__time-start">17:30</span><span class="program-row__time-end">–18:30</span>
+        </div>
+        <div class="program-row__body">
+          <h3 class="program-row__name">TICHÁ DOHODA</h3>
+          <p class="program-row__meta">60 min</p>
+        </div>
+      </li>
+
+      <li class="program-row program-row--headliner">
+        <div class="program-row__time">
+          <span class="program-row__time-start">19:30</span><span class="program-row__time-end">–20:45</span>
+        </div>
+        <div class="program-row__body">
+          <h3 class="program-row__name">HIGHLAND</h3>
+          <p class="program-row__meta">75 min · headliner večera</p>
+        </div>
+        <div class="program-row__badge program-row__badge--filled">HEADLINER</div>
+      </li>
+
+      <li class="program-row">
+        <div class="program-row__time">
+          <span class="program-row__time-start">21:45</span><span class="program-row__time-end">–23:15</span>
+        </div>
+        <div class="program-row__body">
+          <h3 class="program-row__name">AC/DC TRIBUTE PARDUBICE</h3>
+          <p class="program-row__meta">90 min</p>
+        </div>
+      </li>
+
+      <li class="program-row">
+        <div class="program-row__time"><span class="program-row__time-start">23:15</span></div>
+        <div class="program-row__body">
+          <h3 class="program-row__name">KONEC FESTIVALU</h3>
+          <p class="program-row__meta">Děkujeme. Hezky domů.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ─────── INFO – místo, příjezd, vstupenky, místní zdarma ─────── -->
+<section class="info" id="info">
+  <div class="info__inner">
+    <div class="info__header">
+      <span class="info__kicker">03 · MÍSTO &amp; PŘÍJEZD</span>
+      <span class="info__sub">OBECNÍ LOUKA POD HRADEM</span>
+    </div>
+    <h2 class="info__title">PARKOVÁNÍ <span class="info__title-accent">P.</span></h2>
+
+    <div class="info__grid">
+      <!-- LEFT: Map + description + 2 buttons -->
+      <div class="info__col-map">
+        <div class="arrival-map" aria-label="Schematická mapa příjezdů">
+          <svg class="arrival-map__roads" viewBox="0 0 500 400" preserveAspectRatio="none" aria-hidden="true">
+            <!-- Brandýs from N: straight down to upper town area -->
+            <path d="M 280 -10 Q 280 80 250 170" />
+            <!-- Vinoř from W: horizontal east, ends near festival area -->
+            <path d="M -10 195 Q 70 195 140 185" />
+            <!-- Radonice from S/SE: diagonal up to parking -->
+            <path d="M 320 410 Q 370 330 400 250" />
+            <!-- Connecting local roads -->
+            <path d="M 140 185 Q 200 195 250 170" class="arrival-map__road--minor" />
+            <path d="M 250 170 Q 320 200 400 250" class="arrival-map__road--minor" />
+          </svg>
+
+          <div class="arrival-map__pin arrival-map__pin--venue">
+            <div class="arrival-map__pin-mark"></div>
+            <div class="arrival-map__pin-label">AREÁL FESTIVALU</div>
+          </div>
+          <div class="arrival-map__pin arrival-map__pin--parking">
+            <div class="arrival-map__pin-mark">P</div>
+            <div class="arrival-map__pin-label">5 MIN PĚŠKY</div>
+          </div>
+
+          <div class="arrival-map__center-label" aria-hidden="true">JENŠTEJN</div>
+
+          <div class="arrival-map__compass arrival-map__compass--n">↑ BRANDÝS N. L.</div>
+          <div class="arrival-map__compass arrival-map__compass--w">← VINOŘ</div>
+          <div class="arrival-map__compass arrival-map__compass--s">↓ RADONICE</div>
+        </div>
+
+        <p class="info__lead">
+          Na festival se pohodlně dostanete ze tří hlavních směrů. Parkování je zajištěno na vyhrazeném odstavném parkovišti – z parkoviště je to pěšky <b class="info__lead-accent">asi 5 minut</b> do areálu.
+        </p>
+
+        <div class="info__buttons">
+          <a class="btn btn--solid" href="https://maps.app.goo.gl/xgmG71GTUrvJeK7t7" target="_blank" rel="noopener">PARKOVIŠTĚ V GOOGLE MAPS →</a>
+          <a class="btn btn--ghost" href="https://maps.app.goo.gl/DP6pbRbjrUE4nyqT7" target="_blank" rel="noopener">AREÁL V GOOGLE MAPS →</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Routes + ticket panel -->
+      <div class="info__col-routes">
+        <div class="routes">
+          <div class="routes__label">PŘÍJEZDOVÉ TRASY</div>
+          <ol class="routes__list">
+            <li class="routes__item">
+              <span class="routes__num">01</span>
+              <div class="routes__body">
+                <div class="routes__from">BRANDÝS NAD LABEM</div>
+                <div class="routes__note">OD SEVERU · PO SILNICI II/610</div>
+              </div>
+            </li>
+            <li class="routes__item">
+              <span class="routes__num">02</span>
+              <div class="routes__body">
+                <div class="routes__from">VINOŘ</div>
+                <div class="routes__note">OD ZÁPADU · SMĚR PRAHA, Z 10</div>
+              </div>
+            </li>
+            <li class="routes__item">
+              <span class="routes__num">03</span>
+              <div class="routes__body">
+                <div class="routes__from">RADONICE</div>
+                <div class="routes__note">OD JIHU · PŘES PODOLANKU</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="tickets-panel">
+          <div class="tickets-panel__label">VSTUPENKY</div>
+          <div class="tickets-panel__row">
+            <span class="tickets-panel__price">190 Kč</span>
+            <span class="tickets-panel__note">předprodej<br>GoOut · do 19. 6.</span>
+          </div>
+          <div class="tickets-panel__row tickets-panel__row--secondary">
+            <span class="tickets-panel__price tickets-panel__price--secondary">250 Kč</span>
+            <span class="tickets-panel__note">na místě · 20. 6.</span>
+          </div>
+          <a class="tickets-panel__cta" href="https://goout.net/cs/jenstejnfest-2026/szjflby/" target="_blank" rel="noopener">KOUPIT NA GOOUT →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Locals free banner -->
+    <div class="locals-banner">
+      <div class="locals-banner__main">
+        <div class="locals-banner__title">MÍSTNÍ <span class="locals-banner__title-accent">ZDARMA.</span></div>
+        <div class="locals-banner__towns">JENŠTEJN · PODOLANKA · RADONICE</div>
+      </div>
+      <p class="locals-banner__text">
+        Trvalý pobyt v jedné z obcí? Vstup zdarma – stačí se prokázat <b>občankou</b> u brány.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────── FAQ – 3 questions, accordion ─────── -->
+<section class="faq">
+  <div class="faq__inner">
+    <div class="faq__kicker">
+      <span class="faq__kicker-desktop">04 · ČASTÉ DOTAZY</span>
+      <span class="faq__kicker-mobile">04 · INFO PRO HOSTY</span>
+    </div>
+    <h2 class="faq__title">
+      <span class="faq__title-desktop">INFO <span class="faq__title-accent">PRO HOSTY</span></span>
+      <span class="faq__title-mobile">ČASTÉ <span class="faq__title-accent">DOTAZY</span></span>
+    </h2>
+
+    <div class="faq__list">
+
+      <div class="faq-row is-open" data-faq-item>
+        <button class="faq-row__trigger" data-faq-trigger type="button" aria-expanded="true">
+          <span class="faq-row__question">Kde se parkuje?</span>
+          <span class="faq-row__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-row__answer">
+          <p>Na vyhrazeném odstavném parkovišti označeném modrou „P" na mapě. Z parkoviště je to pěšky asi 5 minut do areálu festivalu. Příjezd ze tří hlavních směrů – od Brandýsa nad Labem, Vinoře a Radonic.</p>
+        </div>
+      </div>
+
+      <div class="faq-row" data-faq-item>
+        <button class="faq-row__trigger" data-faq-trigger type="button" aria-expanded="false">
+          <span class="faq-row__question">Kdo má vstup zdarma?</span>
+          <span class="faq-row__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-row__answer">
+          <p>Obyvatelé s trvalým pobytem v Jenštejně, Podolance a Radonicích mají vstup zdarma – při příchodu se prokážou občankou potvrzující trvalý pobyt.</p>
+        </div>
+      </div>
+
+      <div class="faq-row" data-faq-item>
+        <button class="faq-row__trigger" data-faq-trigger type="button" aria-expanded="false">
+          <span class="faq-row__question">Mohu přivést děti?</span>
+          <span class="faq-row__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-row__answer">
+          <p>Ano. Děti mají vstup zdarma v doprovodu rodičů (rodiče hradí běžné vstupné). Věk dítěte je možné prokázat kartičkou pojištěnce, pasem nebo jiným dokladem.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────── ARCHIVE – 2 tiles linking to Google Photos ─────── -->
+<section class="archive" id="foto">
+  <div class="archive__inner">
+    <div class="archive__header">
+      <div class="archive__heading">
+        <span class="archive__kicker">05 · ARCHIV</span>
+        <h2 class="archive__title">DEVĚT<br><span class="archive__title-accent">ROČNÍKŮ</span></h2>
+      </div>
+      <p class="archive__lead">
+        Od roku 2017 každé léto. Devátý ročník – kapely, hrad a obecní louka pod ním.
+      </p>
+    </div>
+
+    <div class="archive__grid">
+
+      <article class="archive-item">
+        <a class="archive-tile" href="https://photos.app.goo.gl/h8aDHiQSLMkscGRW6" target="_blank" rel="noopener">
+          <div class="archive-tile__media archive-tile__media--photo" style="background-image: url('assets/archive-2025.webp');"></div>
+          <div class="archive-tile__gradient"></div>
+          <span class="archive-tile__year">2025</span>
+          <span class="archive-tile__cta">GALERIE →</span>
+        </a>
+        <h3 class="archive-item__label">8. ročník</h3>
+      </article>
+
+      <article class="archive-item">
+        <a class="archive-tile" href="https://photos.app.goo.gl/umvpQtzWcRBTvZTA9" target="_blank" rel="noopener">
+          <div class="archive-tile__media archive-tile__media--photo" style="background-image: url('assets/archive-2024.webp');"></div>
+          <div class="archive-tile__gradient"></div>
+          <span class="archive-tile__year">2024</span>
+          <span class="archive-tile__cta">GALERIE →</span>
+        </a>
+        <h3 class="archive-item__label">7. ročník</h3>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────── FOOTER ─────── -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand-text">JENŠTEJN <span class="site-footer__brand-accent">FEST</span> ’26</div>
+        <div class="site-footer__brand-sub">IX. ROČNÍK · OD 2017</div>
+      </div>
+      <div class="site-footer__social">
+        <a href="https://www.facebook.com/JenstejnFest" target="_blank" rel="noopener">FACEBOOK</a>
+        <a href="https://goout.net/cs/jenstejnfest-2026/szjflby/" target="_blank" rel="noopener">GOOUT</a>
+        <a href="mailto:info@jenstejnfest.cz">MAIL</a>
+      </div>
+    </div>
+
+    <div class="site-footer__cols">
+      <div class="site-footer__col">
+        <h4 class="site-footer__col-title">MÍSTO KONÁNÍ</h4>
+        <p>V Katovičkách 64</p>
+        <p>250 73 Jenštejn</p>
+        <p>50.1544 N · 14.6081 E</p>
+      </div>
+      <div class="site-footer__col">
+        <h4 class="site-footer__col-title">KONTAKT</h4>
+        <a href="mailto:info@jenstejnfest.cz">info@jenstejnfest.cz</a>
+        <a href="https://www.facebook.com/JenstejnFest" target="_blank" rel="noopener">facebook.com/JenstejnFest</a>
+        <a href="https://goout.net/cs/jenstejnfest-2026/szjflby/" target="_blank" rel="noopener">goout.net/jenstejnfest-2026</a>
+      </div>
+      <div class="site-footer__col">
+        <h4 class="site-footer__col-title">PARKOVÁNÍ</h4>
+        <p>Odstavné parkoviště</p>
+        <p>5 min pěšky k areálu</p>
+        <p>Odkaz v sekci Místo</p>
+      </div>
+    </div>
+
+    <p class="site-footer__copyright">© 2026 POŘÁDÁ OBEC JENŠTEJN · SOBOTA 20·06·2026 · OBECNÍ LOUKA POD HRADEM</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
