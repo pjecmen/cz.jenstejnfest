@@ -1328,23 +1328,26 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     letter-spacing: 0.18em;
   }
 
-  /* Hero */
-  .hero { height: 800px; }
+  /* Hero — fit visible viewport (subtract nav offset so strip stays above fold) */
+  .hero {
+    height: calc(100svh - 60px);
+    min-height: 600px;
+  }
   .hero__sidebar { width: 40px; }
   .hero__sidebar-text { font-size: 14px; letter-spacing: 0.5em; }
   .hero__date { top: 80px; right: 20px; }
   .hero__date-day,
   .hero__date-place { font-size: 14px; }
   .hero__lineup {
-    top: 200px;
+    top: 240px;
     left: 56px;
     right: 16px;
   }
-  .hero__band--highland { font-size: 58px; }
+  .hero__band--highland { font-size: 68px; }
   .hero__band--ticha,
-  .hero__band--acdc { font-size: 30px; }
+  .hero__band--acdc { font-size: 36px; }
   .hero__band--mutanti {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.0;
   }
   .hero__band--mutanti-desktop { display: none; }
