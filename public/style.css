@@ -1583,27 +1583,31 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   }
 
   .archive__grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
   }
-  .archive-tile { aspect-ratio: 4 / 3; }
-  .archive-tile__initial { font-size: 110px; }
+  .archive-tile {
+    aspect-ratio: 4 / 5;
+  }
+  .archive-tile__initial { font-size: 64px; }
   .archive-tile__year {
-    top: 10px;
-    left: 12px;
-    font-size: 16px;
-    padding: 3px 8px;
+    top: 6px;
+    left: 6px;
+    font-size: 11px;
+    padding: 2px 5px;
+    letter-spacing: 0.12em;
   }
   .archive-tile__cta {
-    bottom: 10px;
-    right: 10px;
-    font-size: 10px;
-    letter-spacing: 0.28em;
-    padding: 4px 8px;
+    bottom: 6px;
+    right: 6px;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    padding: 3px 5px;
   }
   .archive-item__label {
-    font-size: 22px;
-    margin-top: 8px;
+    font-size: 15px;
+    margin-top: 6px;
+    letter-spacing: 0.01em;
   }
 
   /* Footer */
