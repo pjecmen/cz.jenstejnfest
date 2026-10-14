@@ -1096,7 +1096,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .archive__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   max-width: 1200px;
 }
@@ -1583,7 +1583,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   }
 
   .archive__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
   }
   .archive-tile {
