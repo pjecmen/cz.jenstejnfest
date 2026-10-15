@@ -1,5 +1,5 @@
-/* JenštejnFest 26 — app.js
-   - Countdown to 2026-06-20T15:15:00+02:00 (gates open)
+/* JenštejnFest 27 — app.js
+   - Countdown to 2027-06-19T15:15:00+02:00 (gates open)
    - FAQ accordion (single open at a time)
    - Smooth scroll for anchor links
    - Hamburger toggle (icon-only for MVP)

@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────────────────────────
-   JenštejnFest 26 — style.css
+   JenštejnFest 27 — style.css
    Build order: foundation → nav → hero → other sections
    ───────────────────────────────────────────────────────────── */
 
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 /* Lineup typography stack — center-left */
 .hero__lineup {
   position: absolute;
-  top: 220px;
+  top: 180px;
   left: 120px;
   right: 48px;
   color: var(--jf-blue-deep);
@@ -211,28 +211,28 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   margin-top: 14px;
 }
 .hero__band:first-child { margin-top: 0; }
-.hero__band--highland {
-  font-size: clamp(72px, 11.5vw, 165px);
+/* Bands by billing (headliner first) — names change yearly, classes stay */
+.hero__band--headliner {
+  font-size: clamp(60px, 8vw, 116px);
+  line-height: 1.18; /* Anton accents reach 1.1em: room for háčky/čárky on line 2 */
   color: var(--jf-blue-ink);
 }
-.hero__band--ticha {
-  font-size: clamp(40px, 6.6vw, 95px);
+.hero__band--second {
+  font-size: clamp(40px, 6.2vw, 88px);
   color: var(--jf-red);
 }
-.hero__band--ticha .dot { color: var(--jf-blue-ink); }
-.hero__band--acdc {
-  font-size: clamp(40px, 6.6vw, 95px);
+.hero__band--second .dot { color: var(--jf-blue-ink); }
+.hero__band--third {
+  font-size: clamp(40px, 6.2vw, 88px);
   color: var(--jf-blue-ink);
   margin-top: 10px;
 }
-.hero__band--acdc .dot { color: var(--jf-red); }
-.hero__band--mutanti {
-  font-size: clamp(34px, 5.6vw, 80px);
+.hero__band--third .dot { color: var(--jf-red); }
+.hero__band--fourth {
+  font-size: clamp(34px, 5vw, 72px);
   color: var(--jf-blue-deep);
-  margin-top: 10px;
+  margin-top: 24px; /* keeps the accent in NYVÝ off the line above */
 }
-.hero__band--mutanti .dot { opacity: 0.4; }
-.hero__band--mutanti-mobile { display: none; }
 
 /* Ticket strip — bottom dark blue */
 .hero__strip {
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .hero__strip-cta:hover { background: #e3b833; }
 
 /* ═══════════════════════════════════════════════════════
-   MASTHEAD — IX. ročník strip
+   MASTHEAD — X. ročník strip
    ═══════════════════════════════════════════════════════ */
 .masthead {
   background: var(--jf-cream);
@@ -485,7 +485,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   color: var(--jf-yellow);
   letter-spacing: 0.04em;
   line-height: 1;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 2px 14px rgba(0, 0, 0, 0.6); /* legible over bright stage lights */
 }
 
 .band-card__bottom {
@@ -498,7 +498,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .band-card__name {
   font-family: var(--font-display);
   font-size: clamp(24px, 3.2vw, 46px);
-  line-height: 0.95;
+  line-height: 1.12; /* two-line names: keep háčky/čárky off the line above */
   letter-spacing: 0.005em;
   margin: 0;
 }
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   margin-top: 12px;
   font-family: var(--font-display);
   font-size: 14px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em; /* long domains (helmutovastrikacka.cz) fit 4 columns from 1280px */
   color: var(--jf-yellow);
 }
 
@@ -629,6 +629,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .program-row--headliner .program-row__name {
   color: var(--jf-red);
   font-size: clamp(36px, 7vw, 100px);
+  line-height: 1.12; /* long headliner names wrap; keep accents clear */
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -916,6 +917,21 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   text-decoration: none;
 }
 .tickets-panel__cta:hover { background: var(--jf-cream); }
+
+/* Before presale opens: headline instead of prices + CTA */
+.tickets-panel__soon {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 1.15;
+  color: var(--jf-white);
+}
+.tickets-panel__soon-note {
+  font-family: var(--font-body);
+  font-size: 13px;
+  opacity: 0.85;
+  line-height: 1.4;
+  margin-top: 14px;
+}
 
 /* ─── Locals yellow banner ─── */
 .locals-banner {
@@ -1264,6 +1280,14 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 /* ═══════════════════════════════════════════════════════
+   TABLET / NARROW WINDOW — 769–1279px
+   ═══════════════════════════════════════════════════════ */
+@media (min-width: 769px) and (max-width: 1279px) {
+  /* 2×2 band cards: four columns are too narrow for names and links */
+  .lineup__grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ═══════════════════════════════════════════════════════
    MOBILE — breakpoint 768px
    ═══════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
@@ -1343,15 +1367,10 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     left: 56px;
     right: 16px;
   }
-  .hero__band--highland { font-size: 68px; }
-  .hero__band--ticha,
-  .hero__band--acdc { font-size: 36px; }
-  .hero__band--mutanti {
-    font-size: 28px;
-    line-height: 1.0;
-  }
-  .hero__band--mutanti-desktop { display: none; }
-  .hero__band--mutanti-mobile { display: inline; }
+  .hero__band--headliner { font-size: 60px; }
+  .hero__band--second,
+  .hero__band--third { font-size: 32px; } /* KABÁT · REVIVAL WEST on one line from 360px */
+  .hero__band--fourth { font-size: 28px; margin-top: 14px; }
   .hero__strip {
     left: 40px;
     height: 80px;
@@ -1367,7 +1386,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   /* Masthead — swap right text, hide left separator */
   .masthead__inner {
     padding: 14px 20px;
-    letter-spacing: 0.32em;
+    letter-spacing: 0.26em; /* "X. JUBILEJNÍ ROČNÍK" stays on one line from 360px */
   }
   .masthead__number { font-size: 18px; }
   .masthead__text { font-size: 12px; }
@@ -1418,21 +1437,22 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   .lineup__title-mobile { display: inline; }
   .lineup__counter { display: none; }
 
+  /* One card per row: long names, times and links fit without overlapping */
   .lineup__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
   .band-card {
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16 / 10;
   }
   .band-card__top { top: 14px; left: 14px; right: 14px; }
   .band-card__badge { padding: 4px 8px; font-size: 11px; }
-  .band-card__time { font-size: 24px; }
+  .band-card__time { font-size: 28px; }
   .band-card__bottom { padding: 0 14px 16px; }
-  .band-card__name { font-size: 24px; }
-  .band-card__meta { font-size: 11px; margin-top: 6px; }
-  .band-card__link { margin-top: 8px; font-size: 11px; }
+  .band-card__name { font-size: 30px; }
+  .band-card__meta { font-size: 12px; margin-top: 6px; }
+  .band-card__link { margin-top: 8px; font-size: 12px; }
   .band-card__initial { font-size: 110px; }
 
   /* Program */
@@ -1536,6 +1556,8 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   .tickets-panel__price--secondary { font-size: 36px; }
   .tickets-panel__note { font-size: 11px; }
   .tickets-panel__cta { font-size: 16px; padding: 14px 0; margin-top: 18px; }
+  .tickets-panel__soon { font-size: 40px; }
+  .tickets-panel__soon-note { font-size: 11px; margin-top: 10px; }
 
   /* Locals banner */
   .locals-banner {
