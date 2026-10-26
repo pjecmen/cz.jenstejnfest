@@ -883,8 +883,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 .tickets-panel__row {
   display: flex;
+  flex-wrap: wrap; /* no room beside the price: note drops under it */
   align-items: baseline;
-  gap: 16px;
+  gap: 4px 16px;
 }
 .tickets-panel__row--secondary { margin-top: 10px; }
 .tickets-panel__price {
@@ -892,6 +893,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
   font-size: 80px;
   line-height: 0.9;
   color: var(--jf-white);
+  white-space: nowrap;
 }
 .tickets-panel__price--secondary {
   font-size: 50px;
@@ -1285,6 +1287,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 @media (min-width: 769px) and (max-width: 1279px) {
   /* 2×2 band cards: four columns are too narrow for names and links */
   .lineup__grid { grid-template-columns: 1fr 1fr; }
+
+  /* Tickets panel sits in the narrow right column: mobile sizes */
+  .tickets-panel__price { font-size: 56px; }
+  .tickets-panel__price--secondary { font-size: 36px; }
+  .tickets-panel__note { font-size: 11px; }
 }
 
 /* ═══════════════════════════════════════════════════════
